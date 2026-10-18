@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>服务优势 - 义乌贝织商贸有限公司</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -13,6 +13,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
+                <i class="fas fa-gem logo-gem"></i>
                 <h2>义乌贝织商贸</h2>
             </div>
             <ul class="nav-menu">
@@ -42,9 +43,10 @@
 
     <!-- 页面标题 -->
     <section class="page-header">
+        <div class="page-header-bg"></div>
         <div class="container">
-            <h1>服务优势</h1>
-            <p>专业服务，值得信赖</p>
+            <h1 class="reveal">服务优势</h1>
+            <p class="reveal" data-delay="100">专业服务，值得信赖</p>
         </div>
     </section>
 
@@ -53,25 +55,25 @@
         <div class="container">
             <div class="intro-content">
                 <div class="intro-text">
-                    <h2>专业服务，值得信赖</h2>
-                    <p>义乌贝织商贸有限公司致力于为客户提供全方位的纺织品贸易服务。我们拥有专业的团队、完善的供应链体系和严格的质量管理体系，确保为客户提供最优质的产品和服务。</p>
-                    <p>我们的服务涵盖产品咨询、采购代理、质量检测、物流配送、售后服务等各个环节，为客户提供一站式解决方案。</p>
+                    <h2 class="gradient-text">专业服务，值得信赖</h2>
+                    <p>义乌贝织商贸致力于为钻石画爱好者与商家提供全方位工具服务。我们拥有懂行的团队、稳定的供应链与严格的品控体系，让选品、采购到交付都省心顺畅。</p>
+                    <p>服务涵盖产品咨询、套装搭配、贴牌定制、质检出货、物流配送与售后支持，为客户提供一站式解决方案。</p>
                 </div>
                 <div class="intro-stats">
-                    <div class="stat-item">
+                    <div class="stat-item reveal" data-delay="0">
                         <h3>24/7</h3>
-                        <p>客户服务</p>
+                        <p>客户支持</p>
                     </div>
-                    <div class="stat-item">
-                        <h3>48h</h3>
+                    <div class="stat-item reveal" data-delay="100">
+                        <h3 data-count="48" data-suffix="h">0</h3>
                         <p>快速响应</p>
                     </div>
-                    <div class="stat-item">
-                        <h3>100%</h3>
+                    <div class="stat-item reveal" data-delay="200">
+                        <h3 data-count="100" data-suffix="%">0</h3>
                         <p>质量保证</p>
                     </div>
-                    <div class="stat-item">
-                        <h3>98%</h3>
+                    <div class="stat-item reveal" data-delay="300">
+                        <h3 data-count="98" data-suffix="%">0</h3>
                         <p>客户满意度</p>
                     </div>
                 </div>
@@ -82,61 +84,62 @@
     <!-- 核心服务 -->
     <section class="core-services">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
+                <span class="eyebrow">CORE</span>
                 <h2>核心服务</h2>
                 <p>为您提供全方位的专业服务</p>
             </div>
             <div class="services-grid">
-                <div class="service-item">
+                <div class="service-item reveal" data-delay="0">
                     <div class="service-icon">
                         <i class="fas fa-shipping-fast"></i>
                     </div>
-                    <h3>快速配送</h3>
-                    <p>全国范围内快速配送，确保产品及时送达。我们与多家知名物流公司合作，为客户提供高效、安全的配送服务。</p>
+                    <h3>快速发货</h3>
+                    <p>义乌仓现货直发，与多家物流合作，国内及跨境高效送达。</p>
                     <ul class="service-features">
-                        <li>全国配送网络</li>
+                        <li>现货仓储</li>
                         <li>实时物流跟踪</li>
-                        <li>安全包装保障</li>
-                        <li>准时送达承诺</li>
+                        <li>安全包装</li>
+                        <li>准时交付</li>
                     </ul>
                 </div>
-                <div class="service-item">
+                <div class="service-item reveal" data-delay="100">
                     <div class="service-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>质量保证</h3>
-                    <p>严格的质量控制体系，确保产品品质。我们建立了完善的质量检测流程，从原材料到成品，每个环节都有严格的质量控制。</p>
+                    <p>出货前逐批质检，从原料到成品每个环节严格把控。</p>
                     <ul class="service-features">
-                        <li>严格质量检测</li>
-                        <li>品质认证体系</li>
-                        <li>质量追溯系统</li>
-                        <li>品质保证承诺</li>
+                        <li>逐批质检</li>
+                        <li>品控体系</li>
+                        <li>问题追溯</li>
+                        <li>品质承诺</li>
                     </ul>
                 </div>
-                <div class="service-item">
+                <div class="service-item reveal" data-delay="200">
                     <div class="service-icon">
                         <i class="fas fa-headset"></i>
                     </div>
                     <h3>专业咨询</h3>
-                    <p>专业团队提供技术咨询和产品推荐。我们的技术团队具有丰富的行业经验，能够为客户提供专业的产品选择建议。</p>
+                    <p>懂钻石画的团队提供选品建议与套装搭配方案。</p>
                     <ul class="service-features">
-                        <li>专业产品咨询</li>
-                        <li>技术方案设计</li>
-                        <li>应用指导服务</li>
-                        <li>行业趋势分析</li>
+                        <li>选品建议</li>
+                        <li>套装方案</li>
+                        <li>使用指导</li>
+                        <li>趋势分享</li>
                     </ul>
                 </div>
-                <div class="service-item">
+                <div class="service-item reveal" data-delay="300">
                     <div class="service-icon">
-                        <i class="fas fa-tools"></i>
+                        <i class="fas fa-tags"></i>
                     </div>
-                    <h3>定制服务</h3>
-                    <p>根据客户需求提供个性化定制解决方案。我们能够根据客户的具体需求，提供量身定制的产品和服务。</p>
+                    <h3>定制贴牌</h3>
+                    <p>支持LOGO印制与工具套装组合，助力客户自有品牌。</p>
                     <ul class="service-features">
-                        <li>个性化定制</li>
-                        <li>规格尺寸定制</li>
-                        <li>颜色图案定制</li>
-                        <li>功能特性定制</li>
+                        <li>个性定制</li>
+                        <li>套装组合</li>
+                        <li>品牌印制</li>
+                        <li>起订灵活</li>
                     </ul>
                 </div>
             </div>
@@ -146,44 +149,45 @@
     <!-- 服务流程 -->
     <section class="service-process">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
+                <span class="eyebrow">PROCESS</span>
                 <h2>服务流程</h2>
-                <p>标准化的服务流程，确保服务质量</p>
+                <p>标准化流程，确保服务质量</p>
             </div>
             <div class="process-steps">
-                <div class="process-step">
+                <div class="process-step reveal" data-delay="0">
                     <div class="step-number">01</div>
                     <div class="step-content">
                         <h3>需求沟通</h3>
-                        <p>深入了解客户需求，确定产品规格、数量、质量要求等</p>
+                        <p>了解产品类型、数量、定制要求与时效，明确合作目标</p>
                     </div>
                 </div>
-                <div class="process-step">
+                <div class="process-step reveal" data-delay="100">
                     <div class="step-number">02</div>
                     <div class="step-content">
-                        <h3>方案制定</h3>
-                        <p>根据客户需求制定详细的产品方案和报价</p>
+                        <h3>方案报价</h3>
+                        <p>根据需求提供选品清单与详细报价，透明无隐藏</p>
                     </div>
                 </div>
-                <div class="process-step">
+                <div class="process-step reveal" data-delay="200">
                     <div class="step-number">03</div>
                     <div class="step-content">
                         <h3>样品确认</h3>
-                        <p>提供样品供客户确认，确保产品符合要求</p>
+                        <p>提供样品供确认，确保工具手感与品质符合预期</p>
                     </div>
                 </div>
-                <div class="process-step">
+                <div class="process-step reveal" data-delay="300">
                     <div class="step-number">04</div>
                     <div class="step-content">
-                        <h3>生产交付</h3>
-                        <p>按确认的样品进行生产，按时交付产品</p>
+                        <h3>备货交付</h3>
+                        <p>按确认方案备货质检，安全包装并及时发出</p>
                     </div>
                 </div>
-                <div class="process-step">
+                <div class="process-step reveal" data-delay="400">
                     <div class="step-number">05</div>
                     <div class="step-content">
-                        <h3>售后服务</h3>
-                        <p>提供完善的售后服务和技术支持</p>
+                        <h3>售后支持</h3>
+                        <p>提供完善售后与补货支持，建立长期合作</p>
                     </div>
                 </div>
             </div>
@@ -193,52 +197,53 @@
     <!-- 增值服务 -->
     <section class="value-services">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
+                <span class="eyebrow">VALUE</span>
                 <h2>增值服务</h2>
-                <p>超出预期的专业服务</p>
+                <p>超出预期的专业支持</p>
             </div>
             <div class="value-services-grid">
-                <div class="value-service">
+                <div class="value-service reveal" data-delay="0">
                     <div class="service-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>市场分析</h3>
-                    <p>为客户提供行业市场分析报告，帮助客户了解市场趋势和机会</p>
+                    <h3>选品分析</h3>
+                    <p>结合市场趋势提供工具选品建议，帮助客户降低试错成本</p>
                 </div>
-                <div class="value-service">
+                <div class="value-service reveal" data-delay="100">
                     <div class="service-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>技术培训</h3>
-                    <p>为客户提供产品使用技术培训，确保客户能够正确使用产品</p>
+                    <h3>使用指导</h3>
+                    <p>提供工具使用与套装搭配指导，提升终端体验</p>
                 </div>
-                <div class="value-service">
+                <div class="value-service reveal" data-delay="200">
                     <div class="service-icon">
                         <i class="fas fa-handshake"></i>
                     </div>
                     <h3>商务对接</h3>
-                    <p>协助客户与供应商进行商务对接，提供商务谈判支持</p>
+                    <p>协助与工厂商务对接，提供谈判与起订量支持</p>
                 </div>
-                <div class="value-service">
+                <div class="value-service reveal" data-delay="300">
                     <div class="service-icon">
                         <i class="fas fa-warehouse"></i>
                     </div>
-                    <h3>仓储服务</h3>
-                    <p>为客户提供仓储服务，确保产品安全存储和及时配送</p>
+                    <h3>代发仓储</h3>
+                    <p>提供仓储与一件代发服务，减轻客户库存压力</p>
                 </div>
-                <div class="value-service">
+                <div class="value-service reveal" data-delay="400">
                     <div class="service-icon">
                         <i class="fas fa-file-contract"></i>
                     </div>
-                    <h3>合同管理</h3>
-                    <p>协助客户进行合同管理，确保交易安全和合规</p>
+                    <h3>合同保障</h3>
+                    <p>规范合同管理，确保交易安全合规可追溯</p>
                 </div>
-                <div class="value-service">
+                <div class="value-service reveal" data-delay="500">
                     <div class="service-icon">
                         <i class="fas fa-globe"></i>
                     </div>
-                    <h3>国际贸易</h3>
-                    <p>为客户提供国际贸易服务，协助客户开拓国际市场</p>
+                    <h3>跨境支持</h3>
+                    <p>支持跨境电商与小语种沟通，助力开拓海外市场</p>
                 </div>
             </div>
         </div>
@@ -247,38 +252,39 @@
     <!-- 服务承诺 -->
     <section class="service-commitment">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
+                <span class="eyebrow">PROMISE</span>
                 <h2>服务承诺</h2>
                 <p>我们对客户的郑重承诺</p>
             </div>
             <div class="commitment-content">
-                <div class="commitment-item">
+                <div class="commitment-item reveal" data-delay="0">
                     <div class="commitment-icon">
                         <i class="fas fa-clock"></i>
                     </div>
                     <h3>快速响应</h3>
-                    <p>客户咨询24小时内响应，紧急需求2小时内响应</p>
+                    <p>客户咨询及时响应，紧急需求优先处理</p>
                 </div>
-                <div class="commitment-item">
+                <div class="commitment-item reveal" data-delay="100">
                     <div class="commitment-icon">
                         <i class="fas fa-check-circle"></i>
                     </div>
                     <h3>质量保证</h3>
-                    <p>所有产品均经过严格质量检测，确保符合客户要求</p>
+                    <p>所有工具经严格质检，确保符合客户要求</p>
                 </div>
-                <div class="commitment-item">
+                <div class="commitment-item reveal" data-delay="200">
                     <div class="commitment-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>售后保障</h3>
-                    <p>提供完善的售后服务，确保客户使用无忧</p>
+                    <p>提供完善售后与补货支持，确保合作无忧</p>
                 </div>
-                <div class="commitment-item">
+                <div class="commitment-item reveal" data-delay="300">
                     <div class="commitment-icon">
                         <i class="fas fa-handshake"></i>
                     </div>
                     <h3>诚信经营</h3>
-                    <p>始终坚持诚信经营原则，建立长期合作关系</p>
+                    <p>始终坚持诚信原则，建立长期稳定合作</p>
                 </div>
             </div>
         </div>
@@ -287,41 +293,42 @@
     <!-- 客户案例 -->
     <section class="client-cases">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
+                <span class="eyebrow">CASES</span>
                 <h2>客户案例</h2>
-                <p>成功案例展示我们的服务能力</p>
+                <p>成功合作见证我们的服务能力</p>
             </div>
             <div class="cases-grid">
-                <div class="case-item">
+                <div class="case-item reveal" data-delay="0">
                     <div class="case-content">
-                        <h3>某服装企业</h3>
-                        <p>为该企业提供全年服装面料供应服务，年采购量超过100万米，建立了长期稳定的合作关系。</p>
+                        <h3>某跨境电商卖家</h3>
+                        <p>为其提供点钻笔与收纳盒组合套装，常年稳定供应，支撑店铺爆款销售。</p>
                         <div class="case-results">
-                            <span>采购量：100万米/年</span>
-                            <span>合作时间：3年</span>
+                            <span>月供货：3万+</span>
+                            <span>合作：3年</span>
                             <span>满意度：98%</span>
                         </div>
                     </div>
                 </div>
-                <div class="case-item">
+                <div class="case-item reveal" data-delay="100">
                     <div class="case-content">
-                        <h3>某家纺品牌</h3>
-                        <p>为该品牌提供家纺面料定制服务，包括特殊规格和颜色定制，满足品牌个性化需求。</p>
+                        <h3>某画材品牌</h3>
+                        <p>为其定制贴牌工具套装，含灯光垫与定位尺，助力自有品牌上线。</p>
                         <div class="case-results">
-                            <span>定制产品：50+种</span>
+                            <span>定制SKU：40+</span>
                             <span>交付及时率：100%</span>
-                            <span>质量合格率：99.5%</span>
+                            <span>合格率：99.5%</span>
                         </div>
                     </div>
                 </div>
-                <div class="case-item">
+                <div class="case-item reveal" data-delay="200">
                     <div class="case-content">
-                        <h3>某工业企业</h3>
-                        <p>为该企业提供工业用布采购服务，包括过滤布、防护布等，满足工业生产需求。</p>
+                        <h3>某DIY工作室</h3>
+                        <p>提供LED灯光垫与辅助工具一站式采购，满足教学与零售双重需求。</p>
                         <div class="case-results">
-                            <span>产品种类：20+种</span>
-                            <span>服务响应：2小时内</span>
-                            <span>技术支持：24/7</span>
+                            <span>产品：60+种</span>
+                            <span>响应：当日</span>
+                            <span>支持：全程</span>
                         </div>
                     </div>
                 </div>
@@ -334,8 +341,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>义乌贝织商贸有限公司</h3>
-                    <p>专业的纺织品贸易服务商，致力于为客户提供优质的产品和服务。</p>
+                    <h3><i class="fas fa-gem"></i> 义乌贝织商贸有限公司</h3>
+                    <p>专业钻石画工具供应商，致力于为全球DIY爱好者与批发商提供优质装备。</p>
                 </div>
                 <div class="footer-section">
                     <h3>快速链接</h3>
@@ -350,15 +357,15 @@
                     <h3>联系方式</h3>
                     <p><i class="fas fa-phone"></i> 15937782365</p>
                     <p><i class="fas fa-envelope"></i> 2597649276@qq.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 浙江省义乌市国际商贸城</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 浙江省义乌市江东街道</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 义乌贝织商贸有限公司. 保留所有权利.</p>
+                <p>&copy; 2026 义乌贝织商贸有限公司. 保留所有权利.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>联系我们 - 义乌贝织商贸有限公司</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -13,6 +13,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
+                <i class="fas fa-gem logo-gem"></i>
                 <h2>义乌贝织商贸</h2>
             </div>
             <ul class="nav-menu">
@@ -42,9 +43,10 @@
 
     <!-- 页面标题 -->
     <section class="page-header">
+        <div class="page-header-bg"></div>
         <div class="container">
-            <h1>联系我们</h1>
-            <p>期待与您的合作</p>
+            <h1 class="reveal">联系我们</h1>
+            <p class="reveal" data-delay="100">期待与您的合作</p>
         </div>
     </section>
 
@@ -52,44 +54,44 @@
     <section class="contact-info-section">
         <div class="container">
             <div class="contact-grid">
-                <div class="contact-item">
+                <div class="contact-item reveal" data-delay="0">
                     <div class="contact-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <div class="contact-content">
                         <h3>公司地址</h3>
-                        <p>浙江省义乌市国际商贸城</p>
-                        <p>详细地址：义乌市稠州北路国际商贸城一期</p>
+                        <p>浙江省义乌市江东街道</p>
+                        <p>详细地址：义乌市江东街道（仓储与展示中心）</p>
                     </div>
                 </div>
-                <div class="contact-item">
+                <div class="contact-item reveal" data-delay="100">
                     <div class="contact-icon">
                         <i class="fas fa-phone"></i>
                     </div>
                     <div class="contact-content">
                         <h3>联系电话</h3>
                         <p>15937782365</p>
-                        <p>工作时间：周一至周五 9:00-18:00</p>
+                        <p>工作时间：周一至周六 9:00-18:00</p>
                     </div>
                 </div>
-                <div class="contact-item">
+                <div class="contact-item reveal" data-delay="200">
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
                     <div class="contact-content">
                         <h3>电子邮箱</h3>
                         <p>2597649276@qq.com</p>
-                        <p>商务合作：business@yiwubeizhi.com</p>
+                        <p>商务合作：欢迎邮件或微信咨询</p>
                     </div>
                 </div>
-                <div class="contact-item">
+                <div class="contact-item reveal" data-delay="300">
                     <div class="contact-icon">
                         <i class="fas fa-clock"></i>
                     </div>
                     <div class="contact-content">
                         <h3>营业时间</h3>
-                        <p>周一至周五：9:00-18:00</p>
-                        <p>周六：9:00-17:00（周日休息）</p>
+                        <p>周一至周六：9:00-18:00</p>
+                        <p>周日：休息（急单可留言）</p>
                     </div>
                 </div>
             </div>
@@ -103,37 +105,37 @@
                 <div class="contact-info">
                     <h2>为什么选择我们</h2>
                     <div class="info-items">
-                        <div class="info-item">
+                        <div class="info-item reveal" data-delay="0">
                             <i class="fas fa-check-circle"></i>
                             <div>
                                 <h3>专业团队</h3>
-                                <p>拥有丰富的纺织品贸易经验，能够为客户提供专业的建议和服务</p>
+                                <p>深耕钻石画工具，能为您提供精准的选品与搭配建议</p>
                             </div>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item reveal" data-delay="100">
                             <i class="fas fa-check-circle"></i>
                             <div>
                                 <h3>快速响应</h3>
-                                <p>客户咨询24小时内响应，紧急需求2小时内响应</p>
+                                <p>询盘及时回复，报价与打样高效推进</p>
                             </div>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item reveal" data-delay="200">
                             <i class="fas fa-check-circle"></i>
                             <div>
                                 <h3>质量保证</h3>
-                                <p>严格的质量控制体系，确保产品品质符合客户要求</p>
+                                <p>逐批质检，确保发出的每件工具都好用耐用</p>
                             </div>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item reveal" data-delay="300">
                             <i class="fas fa-check-circle"></i>
                             <div>
-                                <h3>售后服务</h3>
-                                <p>提供完善的售后服务和技术支持，确保客户使用无忧</p>
+                                <h3>售后支持</h3>
+                                <p>提供完善售后与补货支持，合作长期无忧</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
+                <div class="contact-form reveal" data-delay="200">
                     <h2>在线留言</h2>
                     <p>请填写以下信息，我们会尽快与您联系</p>
                     <form id="contactForm">
@@ -142,8 +144,8 @@
                             <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
                         </div>
                         <div class="form-group">
-                            <label for="company">公司名称</label>
-                            <input type="text" id="company" name="company" placeholder="请输入您的公司名称">
+                            <label for="company">公司/店铺名称</label>
+                            <input type="text" id="company" name="company" placeholder="请输入您的公司或店铺名称">
                         </div>
                         <div class="form-group">
                             <label for="email">电子邮箱 *</label>
@@ -157,10 +159,11 @@
                             <label for="product">感兴趣的产品</label>
                             <select id="product" name="product">
                                 <option value="">请选择感兴趣的产品</option>
-                                <option value="clothing">服装面料</option>
-                                <option value="home-textile">家纺用品</option>
-                                <option value="industrial">工业用布</option>
-                                <option value="custom">定制服务</option>
+                                <option value="pens">点钻笔系列</option>
+                                <option value="storage">收纳分装</option>
+                                <option value="lightpad">LED灯光垫</option>
+                                <option value="tools">辅助工具</option>
+                                <option value="custom">定制贴牌</option>
                                 <option value="other">其他</option>
                             </select>
                         </div>
@@ -178,54 +181,55 @@
     <!-- 常见问题 -->
     <section class="faq-section">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
+                <span class="eyebrow">FAQ</span>
                 <h2>常见问题</h2>
                 <p>解答您最关心的问题</p>
             </div>
             <div class="faq-content">
-                <div class="faq-item">
+                <div class="faq-item reveal" data-delay="0">
                     <div class="faq-question">
                         <h3>如何开始合作？</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>您可以通过电话、邮箱或在线留言与我们联系，我们会安排专业团队与您对接，了解您的需求并提供相应的解决方案。</p>
+                        <p>您可以通过电话、邮箱或在线留言与我们联系，我们会安排专人对接，了解需求并提供选品与报价方案。</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item reveal" data-delay="100">
                     <div class="faq-question">
-                        <h3>最小订单量是多少？</h3>
+                        <h3>最小起订量是多少？</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>我们提供灵活的订单量要求，根据产品类型和客户需求确定。对于新客户，我们建议从小批量开始合作。</p>
+                        <p>我们支持灵活的起订量，现货产品可小批量采购；定制贴牌根据工艺与包装有相应起订要求，具体可咨询。</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item reveal" data-delay="200">
                     <div class="faq-question">
                         <h3>产品是否有质量保证？</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>所有产品均经过严格的质量检测，我们提供质量保证承诺。如有质量问题，我们会及时处理并提供解决方案。</p>
+                        <p>所有工具均经过质检，我们提供品质承诺。如有质量问题，会及时处理并提供解决方案。</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item reveal" data-delay="300">
                     <div class="faq-question">
                         <h3>是否提供样品？</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>是的，我们提供样品服务。客户可以申请样品进行测试和确认，确保产品符合要求后再进行批量采购。</p>
+                        <p>是的，我们提供样品服务。客户可申请样品测试确认，满意后再进行批量采购或定制。</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item reveal" data-delay="400">
                     <div class="faq-question">
                         <h3>付款方式有哪些？</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>我们支持多种付款方式，包括银行转账、支付宝、微信支付等。具体付款方式可根据客户需求协商确定。</p>
+                        <p>支持银行转账、支付宝、微信支付等多种方式，具体可根据合作情况协商确定。</p>
                     </div>
                 </div>
             </div>
@@ -237,8 +241,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>义乌贝织商贸有限公司</h3>
-                    <p>专业的纺织品贸易服务商，致力于为客户提供优质的产品和服务。</p>
+                    <h3><i class="fas fa-gem"></i> 义乌贝织商贸有限公司</h3>
+                    <p>专业钻石画工具供应商，致力于为全球DIY爱好者与批发商提供优质装备。</p>
                 </div>
                 <div class="footer-section">
                     <h3>快速链接</h3>
@@ -253,15 +257,15 @@
                     <h3>联系方式</h3>
                     <p><i class="fas fa-phone"></i> 15937782365</p>
                     <p><i class="fas fa-envelope"></i> 2597649276@qq.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 浙江省义乌市国际商贸城</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 浙江省义乌市江东街道</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 义乌贝织商贸有限公司. 保留所有权利.</p>
+                <p>&copy; 2026 义乌贝织商贸有限公司. 保留所有权利.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
