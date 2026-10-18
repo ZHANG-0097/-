@@ -199,6 +199,37 @@ function initHeroParticles() {
     }
 }
 
+// 全局钻石闪光粒子（轻量，纯 CSS 动画 + JS 一次性生成）
+function initSparkles() {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let field = document.querySelector('.sparkle-field');
+    if (!field) {
+        field = document.createElement('div');
+        field.className = 'sparkle-field';
+        field.setAttribute('aria-hidden', 'true');
+        document.body.appendChild(field);
+    }
+    const count = 42;
+    const fragment = document.createDocumentFragment();
+    for (let i = 0; i < count; i++) {
+        const s = document.createElement('span');
+        s.className = 'sparkle';
+        const size = 3 + Math.random() * 6;
+        s.style.setProperty('--size', size + 'px');
+        s.style.setProperty('--left', (Math.random() * 100) + '%');
+        s.style.setProperty('--top', (Math.random() * 100) + '%');
+        s.style.setProperty('--dur', (2.5 + Math.random() * 4) + 's');
+        s.style.setProperty('--delay', (Math.random() * 5) + 's');
+        s.style.setProperty('--max-o', (0.25 + Math.random() * 0.35).toFixed(2));
+        const warm = Math.random() > 0.55;
+        s.style.background = warm
+            ? 'linear-gradient(135deg, rgba(255,255,255,.95), rgba(219,39,119,.55))'
+            : 'linear-gradient(135deg, rgba(255,255,255,.95), rgba(124,58,237,.55))';
+        fragment.appendChild(s);
+    }
+    field.appendChild(fragment);
+}
+
 // 返回顶部按钮
 function createBackToTopButton() {
     const btn = document.createElement('button');
@@ -250,6 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initCounters();
     initSmoothScroll();
     initHeroParticles();
+    initSparkles();
     createBackToTopButton();
     initPageTransition();
 

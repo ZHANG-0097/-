@@ -1296,21 +1296,34 @@ section {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
 }
 
 .contact-item {
     background: white;
-    padding: 2rem;
+    padding: 1.8rem;
     border-radius: var(--radius);
     box-shadow: var(--shadow-sm);
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     transition: transform .4s var(--ease), box-shadow .4s var(--ease);
-    min-height: 140px;
+    min-height: 150px;
     border: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
 }
+
+.contact-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--brand-gradient);
+    opacity: 0;
+    transition: opacity .4s var(--ease);
+}
+
+.contact-item:hover::before { opacity: .05; }
 
 .contact-item:hover {
     transform: translateY(-8px);
@@ -1318,21 +1331,23 @@ section {
 }
 
 .contact-icon {
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
     background: var(--brand-gradient);
-    border-radius: 18px;
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1.4rem;
+    margin-right: 1.2rem;
     flex-shrink: 0;
     box-shadow: var(--shadow-md);
+    position: relative;
 }
 
 .contact-icon i {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     color: white;
+    position: relative;
 }
 
 .contact-content {
@@ -1340,23 +1355,32 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 0;
+    position: relative;
 }
 
 .contact-content h3 {
     color: var(--ink);
-    font-size: 1.2rem;
-    margin-bottom: .7rem;
+    font-size: 1rem;
+    margin-bottom: .35rem;
     font-weight: 800;
     text-align: left;
+    letter-spacing: .02em;
 }
 
 .contact-content p {
     color: var(--muted);
-    line-height: 1.7;
-    margin-bottom: .3rem;
-    font-size: .95rem;
+    line-height: 1.55;
+    margin-bottom: .2rem;
+    font-size: .92rem;
     text-align: left;
     word-break: break-word;
+}
+
+.contact-content p:first-of-type {
+    color: var(--ink);
+    font-size: 1.05rem;
+    font-weight: 600;
 }
 
 .contact-content p:last-child {
@@ -1367,7 +1391,7 @@ section {
     background: white;
 }
 
-.contact-content {
+.contact-form-section .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
@@ -1695,6 +1719,12 @@ section {
 }
 
 /* ============================ 响应式 ============================ */
+@media (max-width: 1100px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -1732,7 +1762,7 @@ section {
     .intro-content,
     .about-content,
     .team-content,
-    .contact-content {
+    .contact-form-section .contact-content {
         grid-template-columns: 1fr;
         gap: 40px;
     }
@@ -1742,7 +1772,9 @@ section {
 
     .contact-grid { grid-template-columns: 1fr; }
 
-    .contact-item { min-height: auto; padding: 1.5rem; }
+    .contact-item { min-height: auto; padding: 1.4rem; }
+
+    .contact-content p:first-of-type { font-size: 1rem; }
 
     .info-item { padding: 1.2rem; }
 
@@ -1750,7 +1782,7 @@ section {
 
     .section-header h2 { font-size: 2rem; }
 
-    .timeline-content::before { left: 32px; }
+    .timeline-content:not(.timeline-item .timeline-content)::before { left: 32px; }
 
     .timeline-item { flex-direction: row !important; }
 
@@ -1785,6 +1817,47 @@ section {
     .page-header p { font-size: 1rem; }
 
     .section-header h2 { font-size: 1.7rem; }
+}
+
+/* ============================ 全局钻石闪光粒子 ============================ */
+.sparkle-field {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 50;
+    overflow: hidden;
+}
+
+.sparkle {
+    position: absolute;
+    width: var(--size, 6px);
+    height: var(--size, 6px);
+    left: var(--left, 50%);
+    top: var(--top, 50%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, .95), rgba(219, 39, 119, .5));
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    opacity: 0;
+    filter: drop-shadow(0 0 4px rgba(124, 58, 237, .5));
+    animation: sparkleTwinkle var(--dur, 3s) ease-in-out var(--delay, 0s) infinite;
+}
+
+@keyframes sparkleTwinkle {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(0deg);
+    }
+    35% {
+        opacity: var(--max-o, .55);
+        transform: scale(1) rotate(45deg);
+    }
+    70% {
+        opacity: var(--max-o, .55);
+        transform: scale(.6) rotate(90deg);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0) rotate(135deg);
+    }
 }
 
 /* 尊重用户的减弱动效偏好 */
